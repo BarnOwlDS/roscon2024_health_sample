@@ -20,6 +20,11 @@ Provides:
 
 ```
 vcs import src < workspace.repos
+. /opt/ros/jazzy/setup.bash
+sudo apt update
+sudo apt install ros-jazzy-generate-parameter-library ros-jazzy-generate-parameter-library-py ros-jazzy-diagnostic-aggregator ros-jazzy-osrf-testing-tools-cpp ros-jazzy-test-msgs ros-jazzy-rmw-cyclonedds-cpp ros-jazzy-foxglove-bridge sudo apt update
+sudo apt install ros-jazzy-performance-test-fixture
+
 colcon build
 source install/setup.bash
 

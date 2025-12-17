@@ -6,4 +6,13 @@
     <param name="telegraf_uri" value="$(var telegraf_uri)" />
   </node>
   <node pkg="foxglove_bridge" exec="foxglove_bridge" />
+
+
+  <node pkg="sim_health_topics" exec="sim_heartbeat" output="screen" />
+  <node pkg="sim_health_topics" exec="sim_temp_sensor" output="screen" />
+  <node pkg="sim_health_topics" exec="sim_camera" output="screen" />
+  <node pkg="sim_health_topics" exec="sim_spam" output="screen" />
+  <node pkg="sim_health_topics" exec="sim_cmd_vel" output="screen" />
+
+
 </launch>
