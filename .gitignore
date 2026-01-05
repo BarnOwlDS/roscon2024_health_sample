@@ -1,8 +1,9 @@
 /src/rmw_implementation/
-/src/ros_health_components/
+# /src/ros_health_components/
 /build/
 /install/
 /log/
 /src/build/
 /src/log/
 /src/install/
+.vscode/c_cpp_properties.json

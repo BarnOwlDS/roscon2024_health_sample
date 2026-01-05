@@ -4,8 +4,5 @@ repositories:
   rmw_implementation:
     type: git
     url: https://github.com/BonsaiRobotics/rmw_implementation
-    version: humble-bonsai
-  ros_health_components:
-    type: git
-    url: https://github.com/BonsaiRobotics/ros_health_components
-    version: main
+    version: jazzy-bonsai
+

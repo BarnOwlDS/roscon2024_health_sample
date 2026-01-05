@@ -18,12 +18,16 @@ Provides:
 
 ### Run the ROS components
 
+Charge workspace.repos branch, according to your ROS version
+
 ```
 vcs import src < workspace.repos
 . /opt/ros/jazzy/setup.bash
+
+sudo apt install ros-jazzy-generate-parameter-library ros-jazzy-diagnostic-aggregator ros-jazzy-osrf-testing-tools-cpp ros-jazzy-test-msgs ros-jazzy-rmw-cyclonedds-cpp ros-jazzy-foxglove-bridge ros-jazzy-performance-test-fixture ros-jazzy-generate-parameter-library-py 
+
 sudo apt update
-sudo apt install ros-jazzy-generate-parameter-library ros-jazzy-generate-parameter-library-py ros-jazzy-diagnostic-aggregator ros-jazzy-osrf-testing-tools-cpp ros-jazzy-test-msgs ros-jazzy-rmw-cyclonedds-cpp ros-jazzy-foxglove-bridge sudo apt update
-sudo apt install ros-jazzy-performance-test-fixture
+. /opt/ros/jazzy/setup.bash
 
 colcon build
 source install/setup.bash
@@ -45,3 +49,10 @@ Now navigate to [localhost:3000](http://localhost:3000)
 * Password: `admin`
 * Username: `admin`
 * Go to Dashboards and find "Sample Vehicle Dashboard"
+
+### View the Foxglove layout
+
+Open Foxglove Studio and connect to `ws://localhost:8765`, then import the layout from:
+```
+roscon2024_health_foxglove.json
+```
